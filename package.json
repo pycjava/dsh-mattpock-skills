@@ -1,0 +1,54 @@
+{
+  "name": "dsh-mattpock-skills",
+  "version": "0.1.0",
+  "description": "Matt Pocock's promoted engineering and productivity agent skills (github.com/mattpocock/skills) as a DeepSeek Harness skill-provider plugin.",
+  "license": "MIT",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "skills",
+    "skills-manifest.json",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE",
+    "UPSTREAM",
+    "icon.svg"
+  ],
+  "scripts": {
+    "sync": "node scripts/sync-skills.mjs",
+    "check": "node --check index.js && node scripts/verify-manifest.mjs",
+    "pack": "npm pack"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "~4.0.4"
+  },
+  "icon": "./icon.svg",
+  "engines": {
+    "node": ">=22"
+  },
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "skills",
+    "mattpocock",
+    "cordis",
+    "agent-skills"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pycjava/dsh-mattpock-skills.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}

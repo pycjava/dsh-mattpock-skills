@@ -1,0 +1,11 @@
+# dsh-mattpock-skills bundle patch.
+#
+# One host-plane row: a Cordis service that registers the bundled
+# mattpock-skills provider on the shared `ctx.skills` registry, exposing
+# Matt Pocock's promoted skills (engineering + productivity buckets from
+# github.com/mattpocock/skills) to the `skill` tool in every desktop
+# session. No configuration; the skill set is fixed at package time.
+- insert:
+    - id: dsh-mattpock-skills
+      name: dsh-mattpock-skills
+      config: {}

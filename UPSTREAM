@@ -1,0 +1,7 @@
+Skill content vendored from:
+  https://github.com/mattpocock/skills (main branch)
+Synced at: 2026-09-28T06:58:07.447Z
+Buckets: engineering, productivity (the promoted set its own plugin ships)
+License: MIT (c) Matt Pocock, see LICENSE
+Upstream convention: misc/, in-progress/, deprecated/ buckets are NOT shipped.
+Re-sync: npm run sync (or node scripts/sync-skills.mjs); see README "Re-sync from upstream"
